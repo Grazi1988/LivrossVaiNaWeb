@@ -1,46 +1,31 @@
-    .footer {
-        background-color: #005695;
+.contatosFooter {
+    height: 15vh;
+    background-color: #005695;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#FFFFFFDB;
 
-        p {
-            color: #FFFFFFDB;
-            display: flex;
-
-        }
-
-        img {
-            width: 1.5rem;
-
-        }
-    }
-
-    a {
-        cursor: pointer;
-    }
-
-    .sectionRedesSocias {
+    nav {
+        width: 15%;
         display: flex;
         justify-content: space-between;
-        padding: 1rem;
-
-    }
-
-    .ul {
-        display: flex;
-        justify-content: center;
         align-items: center;
+        
     }
+}
 
+.copyright {
+    height: 8vh;
+    background-color: #232020;
+    color:#FFFFFFDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .final {
-        height: 25px;
-        color: #FFFFFFDB;
-        background-color: #232020;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        p{
-            font-size: 12px;
-        }
-
+    p {
+        font-size: 15px;
     }
+    
+
+}
