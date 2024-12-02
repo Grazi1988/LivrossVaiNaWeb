@@ -55,4 +55,25 @@ form {
     background-color: #005695;
     color: #FFF;
     cursor: pointer;
+    padding: 0;
+}
+
+@media(max-width:780px){
+.queroDoarSection {
+    height: 100vh;
+
+    p{
+        width: 70%;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+form {
+    width: 90%;
+
+    h2 {
+        font-size: larger20px;
+    }
+
+}
 }
