@@ -29,7 +29,7 @@
     
 }
 
-@media (max-widht: 780px){
+@media (max-width: 780px){
     .contatosFooter{
         flex-direction: column;
 
@@ -39,7 +39,7 @@
     }
 
     .copyright{
-        font-size: px;
+        font-size: 12px;
 
         p{
             width: 60%;
