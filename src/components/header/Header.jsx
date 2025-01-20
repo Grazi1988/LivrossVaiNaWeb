@@ -29,8 +29,8 @@ function Header(){
     </header>
         <Routes>
             <Route path='/' element={<Início/>} />
-            <Route path='/livros-doados' element={<LivrosDoados/>}/>
-            <Route path='/quero-doar' element={<QueroDoar/>}/>
+            <Route path='/' element={<LivrosDoados/>}/>
+            <Route path='/' element={<QueroDoar/>}/>
         </Routes>
         </BrowserRouter>
 
