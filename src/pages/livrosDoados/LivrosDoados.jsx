@@ -1,6 +1,6 @@
 import LivroProtagonista from "../../assets/doado.png"
 import s from "./livrosDoados.module.scss"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import axios from 'axios'
 
 function LivrosDoados() {
@@ -8,9 +8,15 @@ function LivrosDoados() {
   const [livros,setLivros] = useState ([])
   
   const getLivros = async()=>{
-    const resposta = await axios.get("https://desafio-livros-api.onrender.com")
-    console.log(resposta)
+    const resposta = await axios.get("https://desafio-livros-api.onrender.com/livros")
+    setLivros(resposta.data.livros)
+    
   } 
+  
+  useEffect(()=>{
+      getLivros()
+  },[])
+
 
   return (
     <section className={s.livrosDoadosSection}>

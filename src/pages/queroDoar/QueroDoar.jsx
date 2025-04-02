@@ -5,13 +5,13 @@ import axios from 'axios'
 
 function QueroDoar() {
 
-  const [título, setTítulo] = useState("")
+  const [titulo, setTitulo] = useState("")
   const [categoria, setCategoria] = useState("")
   const [autor, setAutor] = useState("")
   const [image_url, setImage_url] = useState("")
 
-  const capturaTítulo = (e) => {
-    setTítulo(e.target.value)
+  const capturaTitulo = (e) => {
+    setTitulo(e.target.value)
   }
 
   const capturaCategoria = (e) => {
@@ -29,13 +29,14 @@ function QueroDoar() {
   const enviarDados = async () => {
 
     const dadosAEnviar = {
-      título,
+      titulo,
       categoria,
       autor,
       image_url,
     }
+      console.log(dadosAEnviar)
 
-    await axios.post("https://desafio-livros-api.onrender.com",dadosAEnviar)
+    await axios.post("https://desafio-livros-api.onrender.com/doar",dadosAEnviar)
       alert("Parabéns, seu livro foi cadastrado com sucesso!🎉🎉")
   }
 
@@ -47,7 +48,7 @@ function QueroDoar() {
           <img src={iconeLivro} alt="Imagem de icone de um livro aberto" />
           <h2>Informações do Livro</h2>
         </div>
-        <input type="text" placeholder="Título" onChange={capturaTítulo} required />
+        <input type="text" placeholder="Título" onChange={capturaTitulo} required />
         <input type="text" placeholder="Categoria" onChange={capturaCategoria} required />
         <input type="text" placeholder="Autor" onChange={capturaAutor} required />
         <input type="url" placeholder="Link da Imagem" onChange={capturaImagem} required />
