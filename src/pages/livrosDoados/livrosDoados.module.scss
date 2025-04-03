@@ -10,6 +10,17 @@
     }
 }
 
+.containerCards{
+    width: 95%; 
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+        width: 50%;
+    }
+}
+
 .doandoLivros {
     width: 95%;
     height: 60vh;

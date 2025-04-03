@@ -1,0 +1,49 @@
+.livrosDoadosSection {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.livrosDoadosSection h2 {
+  font-size: 32px;
+}
+
+.containerCards {
+  width: 95%;
+  height: 60vh;
+  display: flex;
+  justify-content: space-between;
+}
+.containerCards img {
+  width: 50%;
+}
+
+.doandoLivros {
+  width: 95%;
+  height: 60vh;
+}
+.doandoLivros section {
+  border: solid 3px #005695;
+  border-radius: 20px;
+  width: 18%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.doandoLivros section div {
+  text-align: center;
+}
+
+@media (max-width: 780px) {
+  .doandoLivros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .doandoLivros section {
+    width: 60%;
+  }
+}/*# sourceMappingURL=livrosDoados.module.css.map */
