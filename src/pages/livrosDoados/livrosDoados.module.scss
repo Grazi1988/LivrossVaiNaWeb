@@ -11,13 +11,20 @@
 }
 
 .containerCards{
-    width: 95%; 
-    height: 60vh;
+    width: 85vw;
+    height: 70vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    h3{
+    color: blue;
+    
+    }
 
     img{
-        width: 50%;
+        width: 10%;
     }
 }
 

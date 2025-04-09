@@ -15,7 +15,8 @@
   display: flex;
   justify-content: space-between;
 }
-.containerCards img {
+
+img {
   width: 50%;
 }
 
@@ -23,6 +24,7 @@
   width: 95%;
   height: 60vh;
 }
+
 .doandoLivros section {
   border: solid 3px #005695;
   border-radius: 20px;
