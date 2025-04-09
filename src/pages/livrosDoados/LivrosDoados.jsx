@@ -8,7 +8,7 @@ function LivrosDoados() {
 
   const getLivros = async () => {
     const resposta = await axios.get(
-      "https://desafio-livros-api.onrender.com/livros"
+      "https://api-livros-wgwr.onrender.com/livros"
     )
     setLivros(resposta.data)
   }
