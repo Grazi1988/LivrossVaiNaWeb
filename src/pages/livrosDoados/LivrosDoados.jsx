@@ -23,10 +23,12 @@ function LivrosDoados() {
       <h2>Livros Doados</h2>
       <section className={s.containerCards}>
         {livros.map((item) => (
-          <section>
+          <section key={item.id}>
             <div>
-              <h3>{item.titulo}</h3>
               <img src={item.image_url} alt={item.titulo} />
+              <h3>{item.titulo}</h3>
+              <h4>{item.autor}</h4>
+              <h5>{item.categoria}</h5>
             </div>
           </section>
         ))}
